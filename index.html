@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálcule a área!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="calculoarea.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo de Áreas</h1>
+    </header>
+
+   <main>
+
+        <div class="card">
+            <h2>Área de figuras geométricas</h2>
+            <p>Escolha a figura:</p>
+
+            <select id="figura" onchange="alterarFigura()">
+            <option value="branco"></option>
+            <option value="circulo">Circulo</option>
+            <option value="quadrado">Quadrado</option>
+            </select>
+            <p id="instrucao">Informe a base e a altura.</p>
+
+            <label id="labelBase" for="base">Base (cm):</label>
+            <input type="number" id="base" placeholder="Ex.: 8" step="any">
+
+            <div id="campoAltura">
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" placeholder="Ex.: 3" step="any">
+            </div>
+        
+
+            <button type="button" onclick="calcularArea()">Calcular</button>
+            <p id="resultado"></p>
+
+        </div>
+   
+        </main>
+
+
+    <footer>
+        Desenvolvido por Letícia Vitória | 2026 | Curso Programador FrontEnd SENAI
+    </footer>
+
+    <script src="calculo-area.js"></script>
+</body>
+</html>
